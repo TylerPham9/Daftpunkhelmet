@@ -1,0 +1,17 @@
+I think that you will need some help with the programming.
+It's easy, but at least you will need some basics knowledge
+Here I will describe you the fields that you need to modify to change the animations.
+-line 49: #define MAXANIMATIONS 14 (Change the number to the max animations you have programmed)
+-line 309: For each animation you will must to add a "case" sentence with the fields that you need.
+maxframes(number of frames of the animation)
+DISPDELAY(how fast the animation will change the frame to next one, 0 is faster it can)
+framestart(All animations are saved in "myfont.h", Here you must to write in what frame start. Example: the first animations will start in the frame number 0, the next one will start in the frame number 0+the number of frames of the last animation, the third one will start in the 0+number of frames of the second one+number of frames of third one)
+loops:(number of times the animation will be show each time is randomly choose)
+typeanimation:(1 for animations, 0 for text)
+in case you have a text animation you will must to add a couple of variables:
+msg("message you want to show)
+Background(1 or 0, it will invert the colors of the letters/background)
+In the myfont.h archive you will write the code for your animations you will must to change:
+-line 1:myfont[245][32](the first number must to be the max number of frames that you have, the second one is the size of your screen, in our case 32)
+then the code that you can see has been generated with one application that I attached you to the mail. The code generate is not exactly in the same format, so try to keep it)
+I think that with that information you will have enough. In my opinion you will must start making some small changes.
